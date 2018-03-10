@@ -79,12 +79,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mydjango',
-        'USER': 'rootadmin',
-        'PASSWORD': 'rootadmin123',
-        'HOST': '172.17.0.4',  # Your openshift host
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydjango.db',
     }
 }
 
